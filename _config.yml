@@ -53,4 +53,4 @@ defaults:
       type: death_bus
     values:
       layout: "fiction"
-      category: "Death Bus"
+      category: "死亡公交"
