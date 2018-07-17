@@ -5,8 +5,13 @@ description: "灵异爱情小说"
 ---
 <div class="list">
   <table>
+    <tr>
+      <th>Index</th>
+      <th>Title</th>
+    </tr>
     {% for sec in site.death_bus %}
     <tr>
+      <td>{{ sec.index }}</td>
       <td><a href="{{ site.url }}/{{ sec.url }}">{{ sec.title }}</a></td>
     </tr>
     {% endfor %}
