@@ -1,12 +1,40 @@
 ---
 layout: default
 ---
-<div class="fiction">
-  {{ content }}
-</div>
-<br /><br />
-<div class="navigator">
-  <center>
-    {% if page.next %}<button class="btn btn--large" type="submit" onclick="javascript:window.location.href='{{ site.url }}/{{ page.fiction }}/{{ page.next.url }}'">Next ({{ page.next.index }})</button>{% endif %}<button class="btn btn--large" type="submit" onclick="javascript:window.location.href='{{ site.url }}/{{ page.fiction }}/'">TOC</button>{% if page.previous %}<button class="btn btn--large" type="submit" onclick="javascript:window.location.href='{{ site.url }}/{{ page.fiction }}/{{ page.previous.url }}'">Previous ({{ page.previous.index }})</button>{% endif %}
-</center>
-</div>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="{{ page.description }}">
+		<meta name="keywords" content="{{ page.title }}">
+		<title>{{ page.index }}. {{ page.title }}</title>
+		<style media="screen">
+			body {
+				background-color: #1d1d1d;
+				margin: 30px;
+				color: #586069;
+			}
+			a {
+				color: #6D9BBD;
+			}
+		</style>
+	</head>
+	<body>
+    <div class="front">
+      <h1>{{ page.index }}. {{ page.title }}</h1>
+      <p>{{ page.description }}</p>
+      <br /><br />
+    </div>
+    <div class="content">
+      <div class="fiction">
+        {{ content }}
+      </div>
+      <br /><br />
+      <div class="navigator">
+        <center>
+          {% if page.next %}<button class="btn btn--large" type="submit" onclick="javascript:window.location.href='{{ site.url }}/{{ page.fiction }}/{{ page.next.url }}'">Next ({{ page.next.index }})</button>{% endif %}<button class="btn btn--large" type="submit" onclick="javascript:window.location.href='{{ site.url }}/{{ page.fiction }}/'">TOC</button>{% if page.previous %}<button class="btn btn--large" type="submit" onclick="javascript:window.location.href='{{ site.url }}/{{ page.fiction }}/{{ page.previous.url }}'">Previous ({{ page.previous.index }})</button>{% endif %}
+      </center>
+      </div>
+    </div>
+	</body>
+</html>
