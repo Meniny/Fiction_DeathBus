@@ -11,32 +11,32 @@ gems: [jekyll-paginate]
 permalink:           pretty
 
 # Setup
-title:               'Fictions'
-tagline:             'Free Fictions Online'
-description:         'Crafted with <3 by Elias.'
-url:                 'https://meniny.cn/fictions'
-# url:                 '/Users/Meniny/Documents/GitHub/Fictions/_site'
+title:               "Fictions"
+tagline:             "Free Fictions Online"
+description:         "Crafted with <3 by Elias."
+url:                 "https://meniny.cn/fictions"
+# url:                 "/Users/Meniny/Documents/GitHub/Fictions/_site"
 paginate:            10
 
 # About/contact
 author:
-  name:              'Elias Abel'
-  url:               'https://twitter.com/_Meniny'
-  email:             'admin@meniny.cn'
+  name:              "Elias Abel"
+  url:               "https://twitter.com/_Meniny"
+  email:             "admin@meniny.cn"
 
 # Custom vars
-version:             '2.0'
+version:             "2.0"
 
 # Social Media
-github:				'https://github.com/Meniny'
-twitter:			'https://twitter.com/_Meniny'
-disqus:       'eliass-cave'
+github: "https://github.com/Meniny"
+twitter: "https://twitter.com/_Meniny"
+disqus: "eliass-cave"
 
-# Theme Author (Please don't edit this line cause of MIT LICENSE rules)
+# Theme Author (Please don"t edit this line cause of MIT LICENSE rules)
 theme:
-  creator:			'Elias Abel'
-  codename:			'Fictions'
-  link:         'https://github.com/Meniny/fictions'
+  creator: "Elias Abel"
+  codename: "Fictions"
+  link: "https://github.com/Meniny/fictions"
 
 collections:
   death_bus:
