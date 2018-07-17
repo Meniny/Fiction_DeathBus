@@ -1,21 +1,42 @@
-title: "Fictions"
-url: "https://meniny.cn/fictions"
-description: "Free Fictions Online"
-copyright: "Elias Abel • 2007-2018"
-copyright_full: "Copyright (c) 2007-2018 Elias Abel. All rights reserved"
-author: "Elias Abel"
-email: "meniny@qq.com"
+# Dependencies
+markdown:            kramdown
+highlighter:         rouge
 
-exclude: ['Gemfile.lock', 'Gemfile', 'Rakefile']
-
-highlighter: rouge
-#pygments
-markdown: kramdown
-permalink: /posts/:title/
-plugins: [jekyll-paginate]
+# Gems (for Jekyll 3.0)
 gems: [jekyll-paginate]
-paginate: 5
-paginate_path: "/posts/page/:num"
+
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           pretty
+
+# Setup
+title:               Fictions
+tagline:             'Free Fictions Online'
+description:         'Crafted with <3 by Elias.'
+url:                 https://meniny.cn/fictions
+# url:                 '/Users/Meniny/Documents/GitHub/Fictions/_site'
+paginate:            10
+
+# About/contact
+author:
+  name:              Elias Abel
+  url:               https://twitter.com/_Meniny
+  email:             admin@meniny.cn
+
+# Custom vars
+version:             2.0
+
+# Social Media
+github:				https://github.com/Meniny
+twitter:			https://twitter.com/_Meniny
+disqus:       eliass-cave
+
+# Theme Author (Please don't edit this line cause of MIT LICENSE rules)
+theme:
+  creator:			Elias Abel
+  codename:			Fictions
+  link:         https://github.com/Meniny/fictions
 
 collections:
   death_bus:
@@ -31,5 +52,5 @@ defaults:
       path: "" # an empty string here means all files in the project
       type: death_bus
     values:
-      layout: "death_bus"
+      layout: "fiction"
       category: "Death Bus"

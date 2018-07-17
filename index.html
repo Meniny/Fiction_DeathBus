@@ -1,12 +1,15 @@
 ---
 layout: default
-title: "Fictions"
-description: "Free fictions online."
+title: Fictions
 ---
-<div class="list">
-  <table>
-    {% for f in site.data.fictions %}
-    <td><a href="{{ site.url }}/{{ f.url }}">{{ f.title }}</a></td>
-    {% endfor %}
-  </table>
+
+<div class="posts">
+  {% for post in site.data.fictions %}<!--paginator.posts-->
+  <div class="post">
+    <h1 class="post-title"><a href="{{ post.url }}">《{{ post.title }}》</a></h1>
+    {% if post.excerpt.size > 0 %}
+    <p>{{ post.excerpt | strip_html | truncate: 500 }}</p>
+    {% endif %}
+  </div>
+  {% endfor %}
 </div>

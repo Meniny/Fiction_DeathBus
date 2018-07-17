@@ -1,19 +1,15 @@
 ---
 layout: default
-title: "死亡公交"
-description: "灵异爱情小说"
+title: 死亡公交
 ---
-<div class="list">
-  <table>
-    <tr>
-      <th>Index</th>
-      <th>Title</th>
-    </tr>
-    {% for sec in site.death_bus %}
-    <tr>
-      <td>{{ sec.index }}</td>
-      <td><a href="{{ site.url }}/{{ sec.url }}">{{ sec.title }}</a></td>
-    </tr>
-    {% endfor %}
-  </table>
+
+<div class="posts">
+  {% for section in site.death_bus %}
+  <div class="post">
+    <h1 class="post-title"><a href="{{ site.url }}{{ section.url }}">{{ section.index }}. {{ section.title }}</a></h1>
+    {% if section.excerpt.size > 0 %}
+    <p>{{ section.excerpt | strip_html | truncate: 100 }}</p>
+    {% endif %}
+  </div>
+  {% endfor %}
 </div>
