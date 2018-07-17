@@ -1,0 +1,14 @@
+---
+layout: default
+title: "死亡公交"
+description: "灵异爱情小说"
+---
+<div class="list">
+  <table>
+    {% for sec in site.death_bus %}
+    <tr>
+      <td><a href="{{ site.url }}/{{ sec.url }}">{{ sec }}</a></td>
+    </tr>
+    {% endfor %}
+  </table>
+</div>

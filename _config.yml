@@ -1,0 +1,35 @@
+title: "Fictions"
+url: "https://meniny.cn/fictions"
+description: "Free Fictions Online"
+copyright: "Elias Abel • 2007-2018"
+copyright_full: "Copyright (c) 2007-2018 Elias Abel. All rights reserved"
+author: "Elias Abel"
+email: "meniny@qq.com"
+
+exclude: ['Gemfile.lock', 'Gemfile', 'Rakefile']
+
+highlighter: rouge
+#pygments
+markdown: kramdown
+permalink: /posts/:title/
+plugins: [jekyll-paginate]
+gems: [jekyll-paginate]
+paginate: 5
+paginate_path: "/posts/page/:num"
+
+collections:
+  death_bus:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: "post"
+  - scope:
+      path: "" # an empty string here means all files in the project
+      type: death_bus
+    values:
+      layout: "death_bus"
+      category: "Death Bus"
