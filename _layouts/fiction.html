@@ -32,7 +32,7 @@ layout: null
       <br /><br />
       <div class="navigator">
         <center>
-          {% if page.next %}<button class="btn btn--large" type="submit" onclick="javascript:window.location.href='{{ site.url }}/{{ page.fiction }}/{{ page.next.url }}'">Next ({{ page.next.index }})</button>{% endif %}<button class="btn btn--large" type="submit" onclick="javascript:window.location.href='{{ site.url }}/{{ page.fiction }}/'">TOC</button>{% if page.previous %}<button class="btn btn--large" type="submit" onclick="javascript:window.location.href='{{ site.url }}/{{ page.fiction }}/{{ page.previous.url }}'">Previous ({{ page.previous.index }})</button>{% endif %}
+          {% if page.next %}<button class="btn btn--large" type="submit" onclick="javascript:window.location.href='{{ site.url }}{{ page.next.url }}'">Next ({{ page.next.index }})</button>{% endif %}<button class="btn btn--large" type="submit" onclick="javascript:window.location.href='{{ site.url }}/{{ page.fiction }}/'">TOC</button>{% if page.previous %}<button class="btn btn--large" type="submit" onclick="javascript:window.location.href='{{ site.url }}{{ page.previous.url }}'">Previous ({{ page.previous.index }})</button>{% endif %}
       </center>
       </div>
     </div>
